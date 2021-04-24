@@ -1,14 +1,14 @@
 package security.controller;
 
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class LoginController {
 
-    @PostMapping("/storage")
-    public void login(@RequestBody String name){
+    @PostMapping("/user")
+    public void endpointForUser() {}
 
-    }
+    @PostMapping("/admin")
+    public void endpointForAdmin() {}
+
 }
