@@ -1,6 +1,6 @@
 pipeline {
     agent {
-       lavel "jdk-8"
+       label "jdk-8"
     }
     stages {
         stage('Build') { 
