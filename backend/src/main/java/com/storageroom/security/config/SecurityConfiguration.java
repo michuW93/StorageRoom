@@ -1,4 +1,4 @@
-package security.config;
+package com.storageroom.security.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +13,7 @@ import javax.sql.DataSource;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
-    private final DataSource dataSource;
+    private DataSource dataSource;
 
     @Autowired
     public SecurityConfiguration(DataSource dataSource) {
