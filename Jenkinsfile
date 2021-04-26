@@ -2,9 +2,6 @@ pipeline {
     agent {
        label "jdk-8"
     }
-    tools {
-        nodejs "node"
-    }
     stages {
         stage('Build') { 
             steps {
