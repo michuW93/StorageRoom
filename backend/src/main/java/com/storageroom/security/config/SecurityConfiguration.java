@@ -23,7 +23,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.jdbcAuthentication()
-                .withDefaultSchema()
                 .dataSource(dataSource)
                 .withUser("user")
                 .password("{bcrypt}" + new BCryptPasswordEncoder().encode("password"))
